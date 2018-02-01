@@ -1,0 +1,113 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "2",
+  "name": "EnterpriseDevMeetup-Chatbot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Buy"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "city"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i want to book a flight for tomorrow to berlin",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 40,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "i want to buy a ticket to london for next monday",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "i'd like to buy a ticket to budapest on the 15th of july",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 28,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i'd like to book a flight to prague on 11.03.",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "i want to buy a ticket to mexico for today",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "i'd like to book a flight to moscow for next friday",
+      "intent": "Buy",
+      "entities": [
+        {
+          "entity": "city",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    }
+  ]
+}
